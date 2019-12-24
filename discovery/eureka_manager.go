@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"time"
 
 	"github.com/carlescere/scheduler"
 	"github.com/labstack/gommon/log"
@@ -42,7 +43,7 @@ func (s *Manager) SendRegistrationOrFail() {
 }
 
 func (s *Manager) ScheduleHeartBeat(service string, intervalInSec int) {
-	_, err := scheduler.Every(intervalInSec).Seconds().NotImmediately().Run(func() {
+	_, err := scheduler.Every(time.Duration(intervalInSec)).Seconds().Run(func() {
 		s.sendHeartBeat(service)
 	})
 

@@ -2,13 +2,13 @@ package config
 
 import (
 	"fmt"
-	"github.com/xdevices/utilities/discovery"
-	"github.com/xdevices/utilities/net"
 	"os"
 	"strconv"
 
-	"github.com/labstack/gommon/log"
+	"github.com/xdevices/utilities/discovery"
+	"github.com/xdevices/utilities/net"
 
+	"github.com/labstack/gommon/log"
 )
 
 type Manager struct {

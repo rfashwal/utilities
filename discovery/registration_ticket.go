@@ -3,8 +3,9 @@ package discovery
 import (
 	"bytes"
 	"fmt"
-	"github.com/xdevices/utilities/net"
 	"strings"
+
+	"github.com/xdevices/utilities/net"
 )
 
 const (
@@ -72,7 +73,11 @@ func (c *NullableString) UnmarshalJSON(in []byte) error {
 	return nil
 }
 
-func BuildRegistrationTicket(appName string, port int, evictionDurationInSeconds int, ignoreLoopback bool) *RegistrationTicket {
+func BuildRegistrationTicket(
+	appName string,
+	port int,
+	evictionDurationInSeconds int,
+	ignoreLoopback bool) *RegistrationTicket {
 
 	ipAddress, err := net.GetIP(ignoreLoopback)
 
