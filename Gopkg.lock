@@ -14,6 +14,18 @@
   version = "v1.1.1"
 
 [[projects]]
+  name = "github.com/jinzhu/gorm"
+  packages = ["."]
+  revision = "79a77d771dee4e4b60e9c543e8663bbc80466670"
+  version = "v1.9.12"
+
+[[projects]]
+  name = "github.com/jinzhu/inflection"
+  packages = ["."]
+  revision = "f5c5f50e6090ae76a29240b61ae2a90dd810112e"
+  version = "v1.0.0"
+
+[[projects]]
   name = "github.com/labstack/gommon"
   packages = [
     "color",
@@ -62,7 +74,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "c709ea063b76879dc9915358f55d4d77c16ab6d5"
+  revision = "548cf772de5052aa878ccb47cdeb7d262b75c8ec"
 
 [[projects]]
   name = "gopkg.in/yaml.v2"
@@ -73,6 +85,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "85f688be06507cddcbf5722a28f1605c0e8003aa758a7a266c981175aa83770c"
+  inputs-digest = "291e1d4f5dca8b7f2d1ade3abe15db9a0a108e2f20275be18003bf78bac2950b"
   solver-name = "gps-cdcl"
   solver-version = 1
